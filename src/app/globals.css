@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@plugin 'tailwindcss-animate';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gain: var(--gain);
+  --color-gain-soft: var(--gain-soft);
+  --color-loss: var(--loss);
+  --color-loss-soft: var(--loss-soft);
+  --color-caution: var(--caution);
+  --color-caution-soft: var(--caution-soft);
+  --color-rule: var(--rule);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+}
+
+:root {
+  --paper: #f8f6f0;
+  --ink: #1b1a17;
+  --rule: #e2ddd0;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #fffdf8;
+  --card-foreground: var(--ink);
+  --popover: #fffdf8;
+  --popover-foreground: var(--ink);
+  --primary: #1e5a47;
+  --primary-foreground: #f6faf7;
+  --secondary: #efebe1;
+  --secondary-foreground: var(--ink);
+  --muted: #efebe1;
+  --muted-foreground: #66625a;
+  --accent: #e6efe9;
+  --accent-foreground: #163f32;
+  --destructive: #a63d2a;
+  --destructive-foreground: #fff;
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: #1e5a47;
+
+  --gain: #2b7148;
+  --gain-soft: #e3f0e6;
+  --loss: #a63d2a;
+  --loss-soft: #f6e4df;
+  --caution: #8a5a00;
+  --caution-soft: #f6ecd6;
+
+  --radius: 0.375rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-ink;
+    text-wrap: balance;
+  }
+  p,
+  li {
+    text-wrap: pretty;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+@layer utilities {
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .prose-plan a {
+    @apply underline decoration-rule underline-offset-2 hover:decoration-primary;
+  }
+}
+
+/* Tailwind v4 set cursor to default rather than pointer */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  /* Segmented keep / reform / remove control. */
+  .seg {
+    @apply inline-flex overflow-hidden rounded-md border border-rule bg-card text-xs;
+  }
+  .seg button {
+    @apply px-2.5 py-1.5 font-medium text-foreground/70;
+  }
+  .seg button + button {
+    @apply border-l border-rule;
+  }
+  .seg button[aria-pressed="true"][data-v="keep"] {
+    @apply bg-secondary text-foreground;
+  }
+  .seg button[aria-pressed="true"][data-v="reform"] {
+    @apply bg-caution-soft text-caution;
+  }
+  .seg button[aria-pressed="true"][data-v="remove"] {
+    @apply bg-gain-soft text-gain;
+  }
+}
