@@ -1,0 +1,29 @@
+2:"$Sreact.fragment"
+3:"/NYCHousing/_next/static/chunks/0n3mustexhu9w.js"
+4:"/NYCHousing/_next/static/chunks/0vs7pwfftcak9.js"
+5:I[97363,["$3","$4"],"default"]
+6:I[46305,["$3","$4"],"default"]
+b:"/NYCHousing/_next/static/chunks/3-va-kei2r7n-.js"
+c:I[51196,["$3","$4","$b"],""]
+d:I[57694,["$3","$4","$b"],"Calculator"]
+e:I[43648,["$3","$4"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[43648,["$3","$4"],"$12"]
+14:"MetadataBoundary"
+15:I[43648,["$3","$4"],"$14"]
+16:I[28035,["$3","$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"mx-auto w-full px-4 py-10 sm:px-8 lg:py-14 max-w-7xl","children":[["$","header",null,{"className":"mb-10 border-b border-rule pb-8","children":[["$","div",null,{"className":"mb-3 text-xs font-semibold tracking-[0.14em] text-primary uppercase","children":"Calculator"}],["$","h1",null,{"className":"text-3xl leading-tight font-semibold sm:text-4xl","children":"What would it cost to build, and what would it rent for?"}],["$","p",null,{"className":"mt-4 max-w-3xl text-lg leading-relaxed text-foreground/80","children":["Pick a neighborhood and a building. Every rule that applies there is listed with its current-law cost; choose to keep, reform or remove each one and watch total development cost, savings, and the rent a new home must charge to break even. The suggested starting point removes or reforms rules we think could reasonably go and keeps the rest. See the ",["$","$Lc",null,{"href":"/method","className":"underline","children":"method"}]," for every formula."]}],"$undefined"]}],["$","$Ld",null,{}]]}],[["$","script","script-0",{"src":"/NYCHousing/_next/static/chunks/3-va-kei2r7n-.js","async":true}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":null,"s":"$9"}}]]
+1:[["children",{"s":"calculator","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L13",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Cost & rent calculator · NYC Housing Costs"}],["$","meta","1",{"name":"description","content":"Pick a neighborhood and building, choose which regulations to keep, reform or remove, and see total development cost, savings and break-even rent."}],["$","link","2",{"rel":"icon","href":"/NYCHousing/icon.svg?icon.07gx1n_tub6w4.svg","sizes":"any","type":"image/svg+xml"}],["$","$L16","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@17","v":null,"s":"$9"}},"a":"$@18","u":"$@19","b":"LWNbBaYkwi0UFGRQxljF6"}
+10:null
+19:true
+9:300
+9:C
+18:0
+7:"$undefined"
+17:"$undefined"
+11:"$undefined"
